@@ -5,7 +5,7 @@ With this script and some CSS, you can enhance the printlayout of your website w
 
 ![Screenshot](http://img402.imageshack.us/img402/3801/beispiel.jpg)
 
-## How to use / Nutzung
+## How to use
 
 	new EnhancedPrinting(content);
 
