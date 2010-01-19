@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html dir=ltr lang=de>
+
+<head>
+<meta charset=UTF-8>
+<title>EnhancedPrinting demo page</title>
+<link rel="stylesheet" href="../Source/style.css">
+<style>
+body { color: #333; font: 15px/21px 'trebuchet ms', arial, sans-serif; }
+h1, #content { margin: 15px auto; width: 600px; }
+h1 { font: 48px georgia, 'times new roman', serif; text-shadow: 2px 2px 0 #ccc; }
+p, ol { margin: 10px 0; }
+ol { margin-left: 20px; }
+a { color: #EE7600; text-decoration: none; }
+a:hover { text-decoration: underline; }
+#printbutton { float: right; }
+
+@media print {
+	body { font-family: georgia, 'times new roman', times, serif; }
+	h1, #content { width: 100%; }
+	#printbutton { display: none; }
+}
+</style>
+
+<body>
+<h1>EnhancedPrinting demo</h1>
+<div id="content">
+	<p>Lorem ipsum eos at probatus contentiones, vim in vidisse reformidans necessitatibus. Mel sadipscing dissentiet no, vim ei <a href="http://mootools.net/">MooTools</a> iuvaret sadipscing. Nam et oportere forensibus, at nam alia deseruisse, cu sea delenit detracto aliquyam. Decore feugait copiosae ne vel, ius ei augue constituam mediocritatem. Eum diam nominavi et, ad sit sint novum mandamus, graece vocent est ne. Est te posse constituto conclusionemque, vix et eros meis consul, eam te nibh discere delectus.
+	<p>Iudicabit concludaturque ex vis. Usu ea <abbr title="Cascading Style Sheets">CSS</abbr> antiopam, has eu modus suscipit praesent. Malorum graecis admodum ut mea. Postea mediocrem an usu, autem iuvaret percipitur no pri, odio erant an est. Quem fugit similique ut mei. Ex malorum antiopam per, omnis congue pro no. Choro deleniti <abbr title="Hypertext markup language">HTML</abbr> per no, mel in <a href="http://mootools.net/">the best JavaScript Framework</a> nullam, regione principes reprimique nec in. 
+	<p>Dicunt audiam tibique ei mel, id nec choro dignissim comprehensam. Sea te laudem <abbr title="Cascading Style Sheets">CSS</abbr> utamur, vix ex natum possim deterruisset. Fuisset nostrum cum cu, id adhuc malis nam. Fugit delicata cu duo. In hinc <a href="http://github.com/FabianBeiner/MooTools-Enhanced-Printing">GitHub</a> animal vulputate has, sea cu facete recusabo reformidans, ut per nihil delectus pericula.
+	<p><input type="button" value="print" id="printbutton">
+</div>
+
+<script src="mootools-1.2.4-core-yc.js"></script>
+<script src="mootools-1.2.4.2-more.js"></script>
+<script src="../Source/EnhancedPrinting.js"></script>
+<script>
+window.addEvent('domready', function() {
+	new EnhancedPrinting('content');
+	
+	$('printbutton').addEvent('click', function() {
+		window.print();
+	});
+});
+</script>

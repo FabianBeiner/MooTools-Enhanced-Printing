@@ -7,10 +7,23 @@ With this script and some CSS, you can enhance the printlayout of your website w
 
 ## How to use
 
-	new EnhancedPrinting(content);
+### Syntax
 
-*content* ist das Element oder die ID des Elements mit den druckbaren Inhalten.  
-*content* is the element or the ID of the element with the printable content.
+	#JS
+	new EnhancedPrinting(content[, options]);
+
+### Arguments
+
+* content - (*mixed*) The element or the id of the element with the printable content.
+* options (*object*, optional) The options object described below:
+
+### Options
+
+* headings - (*boolean*) Default: true. Whether to show headers containing the title, url and last modified date of the document.
+* infoString - (*string*) How the information about the document is displayed. Placeholders: \*url\* and the [keys of Date.format](http://mootools.net/docs/more/Native/Date#Date:format) for the last modified date. Defaults to the german string '(%url% zuletzt bearbeitet am %d.%m.%Y um %H:%M Uhr)'.
+* links - (*boolean*) Default: true. Whether to display footnotes containing the url of the link.
+* favicons - (*boolean*) Default: true: Whether to show favicons before the url.
+* abbr - (*boolean*) Default: true. Whether to show footnotes containing the expansions of the &lt;abbr&gt;-tags.
 
 ## Screenshots
 
