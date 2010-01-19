@@ -12,7 +12,7 @@ With this script and some CSS, you can enhance the printlayout of your website w
 	#JS
 	new EnhancedPrinting(content[, options]);
 
-You have to include style.css or copy the styles into your CSS.
+You have to include EnhancedPrinting.css or copy the styles into your CSS.
 
 ### Arguments
 
