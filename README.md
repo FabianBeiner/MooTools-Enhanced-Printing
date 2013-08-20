@@ -1,4 +1,6 @@
-# EnhancedPrinting
+# [DEPRECATED] EnhancedPrinting
+
+**This repository is deprecated. Please don't use it.**
 
 With this script and some CSS you easily can enhance the print layout of your website with additional information (as footnes), like showing the referring URL of links, marking them if they're external or the explanation of an abbreviation (&lt;abbr&gt;-tag).
 
